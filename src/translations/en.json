@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "about": "About Doctor",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookAppointment": "Book Appointment"
+  },
+  "hero": {
+    "badge": "Trusted Dental Care",
+    "headline1": "Exceptional",
+    "headline2": "Dental Care",
+    "headline3": "& Straight Smile",
+    "description": "We combine modern dentistry with compassionate care to ensure every patient leaves with a healthy and radiant smile.",
+    "ctaBook": "Book Appointment",
+    "ctaCall": "Call Now",
+    "statsLabel": "Transform your smile quickly and with our exceptional services.",
+    "statsSuffix": "Patients Treated"
+  },
+  "stats": {
+    "surgeries": "Performed Surgeries",
+    "satisfiedClients": "Satisfied Clients",
+    "staffMembers": "Staff Members",
+    "yearlySurgeries": "Yearly Surgeries"
+  },
+  "services": {
+    "heading": "We specialize in you,",
+    "headingAccent": "whatever your specialty",
+    "subheading": "At our dental practice, we take pride in providing individually customized solutions that are specifically tailored to meet your unique expertise, requirements, and preferences.",
+    "vibrantCheckups": {
+      "title": "Vibrant Checkups",
+      "description": "At our dental practice, we believe that regular dental exams are the cornerstone of a healthy and radiant smile."
+    },
+    "revitalizedCleaning": {
+      "title": "Revitalized Cleaning",
+      "description": "At our dental practice, we understand that maintaining optimal oral health is essential for a radiant smile and overall well-being."
+    },
+    "reinforcedFillings": {
+      "title": "Reinforced Fillings",
+      "description": "At our dental practice, we prioritize the longevity and functionality of your smile. Our reinforced fillings offer a robust solution."
+    }
+  },
+  "discount": {
+    "heading": "Your Family's Dental Health Matters: Discover Our Budget-Friendly Discount Plan.",
+    "description": "Unlock Optimal Dental Wellness for Your Loved Ones. Embrace Our Budget-Friendly Discount Plan for Comprehensive Care and Radiant Smiles!",
+    "badgeTitle": "80%",
+    "badgeText": "Exclusive Member Savings: Save 30%–80% on Dental Procedures, Including Oral Exams, Cleanings, and X-Rays.",
+    "cta": "Learn More"
+  },
+  "cta": {
+    "heading": "Ready for a Healthier Smile?",
+    "description": "Book your appointment today and experience world-class dental care in a comfortable, friendly environment.",
+    "button": "Schedule Appointment"
+  },
+  "footer": {
+    "tagline": "Providing exceptional dental care with compassion and expertise.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "hours": "Working Hours",
+    "rights": "© 2024 Kawade Dental Clinic. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "heading": "About Our Doctor",
+    "description": "Meet the dedicated dental professional behind Kawade Dental Clinic.",
+    "comingSoon": "Full profile coming soon…"
+  },
+  "servicesPage": {
+    "heading": "Our Services",
+    "description": "Comprehensive dental care tailored to your needs."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "description": "Find answers to the most common dental questions."
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "description": "Reach out to us for appointments or any queries."
+  }
+}
