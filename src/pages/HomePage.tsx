@@ -178,23 +178,37 @@ export function HomePage() {
               initial={{ opacity: 0, scale: 0.85, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-              className="relative flex items-center justify-center"
+              className="relative flex items-center justify-center min-h-[500px]"
             >
+              {/* Decorative Orbital Rings behind the tooth */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
+                className="absolute inset-0 m-auto w-[120%] aspect-square rounded-full border border-[#0077b6]/20 border-dashed z-0"
+              />
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
+                className="absolute inset-0 m-auto w-[90%] aspect-square rounded-full border border-white/50 z-0"
+              />
               {/* Floating stat badges */}
               <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ repeat: Infinity, duration: 3.5, ease: 'easeInOut' }}
-                className="absolute top-6 right-0 lg:-right-4 bg-white rounded-2xl p-3 shadow-xl border border-gray-100 text-xs z-10 min-w-[130px]"
+                animate={{ y: [0, -15, 0], x: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut' }}
+                className="absolute top-10 right-0 lg:-right-8 bg-white/95 backdrop-blur rounded-2xl p-3 shadow-xl border border-gray-100/50 text-xs z-20 min-w-[140px]"
               >
+                <div className="absolute -left-12 top-1/2 w-12 h-[1px] bg-[#0077b6]/30 hidden lg:block" />
                 <p className="font-bold text-[#0a0f1e]">Root Canal Treatment</p>
                 <p className="text-[#0077b6] font-semibold mt-0.5">Pain-free procedure</p>
               </motion.div>
 
               <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut', delay: 0.8 }}
-                className="absolute bottom-16 left-0 lg:-left-6 bg-white rounded-2xl p-3 shadow-xl border border-gray-100 text-xs z-10 min-w-[140px]"
+                animate={{ y: [0, 15, 0], x: [0, -10, 0] }}
+                transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut', delay: 1 }}
+                className="absolute bottom-24 left-0 lg:-left-12 bg-white/95 backdrop-blur rounded-2xl p-3 shadow-xl border border-gray-100/50 text-xs z-20 min-w-[150px]"
               >
+                <div className="absolute -right-16 top-1/2 w-16 h-[1px] bg-green-500/30 hidden lg:block" />
+                <div className="absolute -right-16 top-1/2 w-2 h-2 rounded-full bg-green-500/50 -translate-y-1/2 hidden lg:block" />
                 <p className="font-bold text-[#0a0f1e]">Dental Check-Up</p>
                 <p className="text-green-600 font-semibold mt-0.5">✓ Available Today</p>
               </motion.div>
@@ -204,7 +218,7 @@ export function HomePage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="absolute top-1/3 right-0 lg:-right-2 flex items-center gap-1.5 bg-white/90 backdrop-blur px-3 py-1.5 rounded-full shadow-md text-xs font-medium text-[#374151] z-10"
+                className="absolute top-1/2 lg:top-1/3 -right-2 lg:-right-12 flex items-center gap-1.5 bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow-md text-xs font-semibold text-[#374151] z-20"
               >
                 <MapPin size={12} className="text-[#0077b6]" />
                 Pune, Maharashtra
@@ -226,15 +240,20 @@ export function HomePage() {
                 </div>
               </div>
 
-              {/* Main hero image */}
-              <div className="relative w-full max-w-sm mx-auto">
+              {/* Main hero image with float animation and blend mode */}
+              <motion.div 
+                className="relative w-full max-w-md mx-auto z-0"
+                animate={{ y: [0, -20, 0] }}
+                transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
+              >
                 <img
                   src="/dental-implant.jpg"
                   alt="3D dental implant model"
-                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  className="w-full h-auto object-contain mix-blend-multiply drop-shadow-2xl scale-110"
                   loading="eager"
+                  style={{ filter: 'contrast(1.1)' }}
                 />
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>

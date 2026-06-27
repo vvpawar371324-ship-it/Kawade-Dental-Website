@@ -65,18 +65,97 @@
   "about": {
     "heading": "About Our Doctor",
     "description": "Meet the dedicated dental professional behind Kawade Dental Clinic.",
-    "comingSoon": "Full profile coming soon…"
+    "missionTitle": "Our Mission",
+    "missionDesc": "To deliver the highest standard of dental care in a comfortable, stress-free environment, utilizing state-of-the-art technology and evidence-based practices.",
+    "qualifications": "Qualifications",
+    "qualificationsList": [
+      "BDS - Bachelor of Dental Surgery",
+      "MDS - Master of Dental Surgery in Prosthodontics",
+      "Fellowship in Implantology"
+    ],
+    "experience": "Experience",
+    "experienceText": "With over 15 years of clinical experience, Dr. Kawade has successfully transformed thousands of smiles. His expertise spans across cosmetic dentistry, complex restorative procedures, and advanced implantology."
   },
   "servicesPage": {
     "heading": "Our Services",
-    "description": "Comprehensive dental care tailored to your needs."
+    "description": "Comprehensive dental care tailored to your needs.",
+    "learnMore": "Learn More",
+    "items": [
+      {
+        "title": "Root Canal Treatment",
+        "description": "Painless root canal treatments using advanced rotary endodontics to save your natural teeth.",
+        "icon": "Stethoscope"
+      },
+      {
+        "title": "Dental Implants",
+        "description": "Permanent and natural-looking replacement for missing teeth using premium titanium implants.",
+        "icon": "Syringe"
+      },
+      {
+        "title": "Teeth Whitening",
+        "description": "Professional teeth whitening services to brighten your smile safely and effectively.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Orthodontics",
+        "description": "Traditional braces and clear aligners to straighten teeth and correct bite issues.",
+        "icon": "Activity"
+      },
+      {
+        "title": "Crowns & Bridges",
+        "description": "Custom-made ceramic crowns and bridges to restore damaged or missing teeth.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Pediatric Dentistry",
+        "description": "Gentle and specialized dental care for children in a friendly environment.",
+        "icon": "Heart"
+      }
+    ]
   },
   "faq": {
     "heading": "Frequently Asked Questions",
-    "description": "Find answers to the most common dental questions."
+    "description": "Find answers to the most common dental questions.",
+    "items": [
+      {
+        "question": "How often should I visit the dentist?",
+        "answer": "It is generally recommended to visit the dentist every six months for a routine check-up and professional cleaning. However, depending on your oral health, we might recommend more frequent visits."
+      },
+      {
+        "question": "Are dental X-rays safe?",
+        "answer": "Yes, dental X-rays are extremely safe. We use modern digital X-ray equipment that emits a very low level of radiation, significantly less than traditional film X-rays."
+      },
+      {
+        "question": "What should I do in a dental emergency?",
+        "answer": "In case of a dental emergency, such as a knocked-out tooth, severe pain, or bleeding, contact our clinic immediately. We prioritize emergency cases and will do our best to see you as soon as possible."
+      },
+      {
+        "question": "Do you offer treatments for sensitive teeth?",
+        "answer": "Yes, we provide various treatments for tooth sensitivity, ranging from desensitizing toothpaste recommendations to fluoride treatments and dental restorations, depending on the cause."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept cash, credit/debit cards, UPI, and various digital wallets. We also have tie-ups with select insurance providers for cashless treatments."
+      }
+    ]
   },
   "contact": {
     "heading": "Contact Us",
-    "description": "Reach out to us for appointments or any queries."
+    "description": "Reach out to us for appointments or any queries.",
+    "formHeading": "Send us a Message",
+    "name": "Full Name",
+    "namePlaceholder": "John Doe",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+91 98765 43210",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "Reason for contact",
+    "message": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "successMessage": "Thank you! Your message has been sent successfully. We will get back to you shortly.",
+    "errorMessage": "Something went wrong. Please try again later or contact us directly via phone."
   }
 }

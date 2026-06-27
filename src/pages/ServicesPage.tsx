@@ -1,23 +1,40 @@
-import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
+import { SectionHeading } from '../components/ui/SectionHeading';
+import { ServiceCard, type IconName } from '../components/ui/ServiceCard';
 
 export function ServicesPage() {
   const { t } = useLanguage();
+  
+  // Safe access to services items with a fallback empty array
+  const servicesItems = (t('servicesPage.items') as unknown as any[]) || [];
+  const learnMoreText = t('servicesPage.learnMore');
 
   return (
-    <section className="min-h-screen pt-28 pb-20 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-4xl md:text-5xl font-black text-[#1f2937] mb-4">
-            {t('servicesPage.heading')}
-          </h1>
-          <p className="text-[#6b7280] text-lg">{t('servicesPage.description')}</p>
-          <p className="mt-8 text-[#6b7280] italic text-sm">Full services page coming soon…</p>
-        </motion.div>
+    <section className="min-h-screen pt-28 pb-24 bg-gray-50" aria-label="Our Services">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div className="text-center mb-16">
+          <SectionHeading
+            label="Services"
+            heading={t('servicesPage.heading')}
+            subheading={t('servicesPage.description')}
+            align="center"
+          />
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {Array.isArray(servicesItems) && servicesItems.map((item, index) => (
+            <ServiceCard
+              key={index}
+              title={item.title}
+              description={item.description}
+              iconName={item.icon as IconName}
+              learnMoreText={learnMoreText}
+              delay={index * 0.1}
+            />
+          ))}
+        </div>
+
       </div>
     </section>
   );
